@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    Demo_Job:
+      name: Demo Job
+      tasks:
+        - task_key: Injection
+          notebook_task:
+            notebook_path: ../../src/notebooks/notbook1.ipynb
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
